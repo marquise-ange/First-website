@@ -1,56 +1,77 @@
-<form action="/submit" method="POST">
-    <div>
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required>
-    </div>
-<br>
-<br>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body>
+    <form action="/submit" method="POST" class="form-container">
+      <div class="form-group">
+        <label for="Full Name"> Full Name: </label>
+        <input
+          type="text"
+          name="Full Name"
+          placeholder="Enter your full Name....."
+          required
+        />
+      </div>
 
-    <div>
-        <label for="userEmail">Email Address:</label>
-        <input type="email" id="userEmail" name="userEmail" required>
-    </div>
-<br>
-<br>
+      <div class="form-group">
+        <label for="Email"> Email: </label>
+        <input
+          type="email"
+          name="Email"
+          placeholder="Enter your email....."
+          required
+        />
+      </div>
 
-    <div>
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone">
-    </div>
-<br>
-<br>
+      <div class="form-group">
+        <label for="Phone Number"> Phone Number: </label>
 
-    <div>
-        <label for="inquiryType">Subject Category:</label>
-        <select id="inquiryType" name="inquiryType" required>
-            <option value="support">Customer Support</option>
-            <option value="sales">Sales Inquiry</option>
-            <option value="feedback">General Feedback</option>
+        <input
+          type="tel"
+          name="Phone Number"
+          placeholder="Enter Your phone number ...."
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="Subject category"> Subject category </label>
+
+        <select name="Subject category" id="form-group-select">
+          <option value="select">Select a subject category</option>
+          <option value="customer-support">Customer Support</option>
+          <option value="sales-inquiry">Sales Inquiry</option>
+          <option value="general-question">General Question</option>
         </select>
-    </div>
 
-<br>
-<br>
-
-    <fieldset>
-        <legend>Preferred Contact Method</legend>
-        <input type="radio" id="contactEmail" name="contactMethod" value="email" checked>
-        <label for="contactEmail">Email</label>
-
-        <input type="radio" id="contactPhone" name="contactMethod" value="phone">
-        <label for="contactPhone">Phone</label>
-    </fieldset>
-<br>
-<br>
-
-    <div>
-        <label for="messageBody">Message:</label>
-        <textarea id="messageBody" name="messageBody" rows="5" required></textarea>
-    </div>
+        <fieldset>
+          <legend>Preferred Contact Method:</legend>
+         
+        </fieldset>
 
 
-    <div>
-        <button type="submit">Submit Form</button>
-        <button type="reset">reset form</button>
-    </div>
-</form>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+        </div>
+
+
+        <div class="form-btn">
+          <button type="submit">Submit form</button>
+          <button type="reset">Reset form</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

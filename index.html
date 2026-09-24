@@ -1,50 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Website</title>
-</head>
-<body>
-    <h1>My Tech Blogs</h1>
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  
+  <body>
+  <header class="header">
+    <h1>My Registration <form (ngSubmit)="onSubmit()" #form="ngForm">
+    </form></h1>
     <nav>
-        <a href="https://www.google.com">Google</a>
-        <a href="https://www.youtube.com">YouTube</a>
-        <a href="form.html">Contact Form</a>
+      <a href="/form.html">Form</a>
     </nav>
-    <h2>Understanding HTML</h2>
-    <p>Semantic elements are critical for modern web pages.</p>
+  </header>
 
-    <br>
-    <br>
-     <article>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
-        <br>
-
-        <label for="country">Country:</label>
-        <select id="country" name="country" required>
-            <option value="">Select a country</option>
-            <option value="usa">USA</option>
-            <option value="canada">Canada</option>
-            <option value="uk">UK</option>
-        </select>
-        <br>
-        <br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-        <br>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-    
-
+  <main>
+    <article>
+      <h2>Understanding HTML</h2>
+      <p>Sematic element are critical for a modern web page</p>
     </article>
-    <footer>
-        <p>&copy; 2024 My Tech Blogs. All rights reserved.</p>
-</body>
+    <article>
+      <h2>Understanding CSS</h2>
+      <p>CSS is the styling language for the web</p>
+    </article>  
+    </article>
+  </main>
+  
 
+
+  <footer>
+    <p>© 2026 My Tech Blog</p>
+  </footer>
+  </body>
+  
 </html>
